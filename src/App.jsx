@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Career from './pages/Career';
@@ -7,16 +7,17 @@ import Goals from './pages/Goals';
 
 function App() {
   return (
-    <BrowserRouter basename="/farhan-portfolio">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/career" element={<Career />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/goals" element={<Goals />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
-};
+}
 
 export default App;
