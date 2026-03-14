@@ -3,7 +3,7 @@
 :root {
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: #f6f3ed;
-  background-color: #05005c;
+  background-color: #010127;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -20,7 +20,7 @@ body,
 body {
   margin: 0;
   min-width: 320px;
-  background: #05005c;
+  background: #010127;
   color: #f6f3ed;
 }
 

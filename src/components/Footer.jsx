@@ -66,7 +66,7 @@ function Footer() {
                   target={link.href.startsWith('mailto:') ? undefined : '_blank'}
                   rel={link.href.startsWith('mailto:') ? undefined : 'noreferrer noopener'}
                   aria-label={link.label}
-                  className="flex h-20 w-20 items-center justify-center rounded-full bg-[#f6f3ed] text-[#05005c] transition-transform hover:-translate-y-1"
+                  className="flex h-20 w-20 items-center justify-center rounded-full bg-[#f6f3ed] text-[#010127] transition-transform hover:-translate-y-1"
                 >
                   {link.icon}
                 </a>
