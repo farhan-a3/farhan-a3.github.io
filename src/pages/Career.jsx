@@ -41,7 +41,13 @@ const resumePdf =
 
 function FileIcon() {
   return (
-    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8">
+    <svg
+      viewBox="0 0 24 24"
+      className="h-5 w-5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+    >
       <path d="M7 3.75h7l5 5V20.25H7z" />
       <path d="M14 3.75v5h5" />
       <path d="M9 14.25h6" />
@@ -62,14 +68,14 @@ function Career() {
       </section>
 
       <section className="mx-auto max-w-[1650px] px-6 py-12 sm:px-8 lg:px-10 lg:py-14">
-        <div className="grid gap-14 xl:grid-cols-[minmax(0,1.1fr)_minmax(320px,0.72fr)] xl:gap-20">
-          <div className="max-w-[760px]">
+        <div className="grid gap-14 xl:grid-cols-[minmax(0,1fr)_minmax(520px,640px)] xl:gap-12">
+          <div>
             <div>
               <h2 className="text-[1.8rem] font-bold uppercase tracking-wide text-[#f6f3ed]">
                 Education
               </h2>
 
-              <div className="mt-5 text-[#f6f3ed]">
+              <div className="mt-5 max-w-[860px] text-[#f6f3ed]">
                 <p className="text-[1.45rem] leading-[1.45]">
                   <span className="font-bold">{education.school}</span>
                   <span> | {education.years}</span>
@@ -92,7 +98,7 @@ function Career() {
                 Experience
               </h2>
 
-              <div className="mt-5 space-y-10">
+              <div className="mt-5 max-w-[860px] space-y-10">
                 {experiences.map((experience) => (
                   <div key={experience.title}>
                     <h3 className="text-[1.45rem] font-bold leading-[1.4] text-[#f6f3ed]">
@@ -114,11 +120,11 @@ function Career() {
             </div>
           </div>
 
-          <div className="flex flex-col items-start xl:items-center xl:pt-4">
+          <div className="flex flex-col items-start xl:items-center xl:pt-1">
             <img
               src={resumePreview}
               alt="Resume preview"
-              className="w-full max-w-[470px] bg-white object-cover shadow-[0_16px_40px_rgba(0,0,0,0.22)]"
+              className="w-full max-w-[640px] bg-white object-cover shadow-[0_16px_40px_rgba(0,0,0,0.22)]"
             />
 
             <a
