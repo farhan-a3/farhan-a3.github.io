@@ -4,17 +4,23 @@ const education = {
   school: 'York University',
   years: '2021 - 2026 (expected)',
   degree: 'Honours Bachelor of Science in Computer Science',
-  gpa: '3.5/4.0',
-  coursework:
-    'Data Structures, Algorithm Design & Analysis, Web Development, Object Oriented Programming, Software Design, Database Management Systems, Software Tools, Operating Systems, UI/UX Design',
+  gpa: '3.44/4.0',
+  coursework: 'Data Structures, Algorithm Design & Analysis, Database Management Systems, Operating Systems, Software Design, Introduction to AI, Data Mining, Big Data Systems, Applied Cryptography, Software Engineering Testing',
 };
 
 const experiences = [
   {
+    title: 'AI & Software Engineer Intern | Pitstop | Toronto, ON',
+    dates: 'Jan. 2026 - Mar. 2026',
+    bullets: [
+      'Built automated tests and evaluation tools for fleet dashboards and OCR/VMRS pipelines, investigated production issues, shipped frontend and backend features and fixes, and supported AI fleet analytics by validating SQL outputs and improving prompt accuracy',
+    ],
+  },
+  {
     title: 'QA Automation Engineer Coop | theScore',
     dates: 'January 2025 - Present',
     bullets: [
-      'Developed and maintained automated test suites in Kotlin, executed regression test cycles, and resolved test failures to enhance test coverage, ensure stable app releases, and support reliable CI/CD pipeline performance',
+      'Developed and maintained automated test suites in Kotlin with Selenium/Appium for web, iOS, and Android features, improving test coverage, reducing manual QA effort, and fixing flaky tests to improve pipeline reliability',
     ],
   },
   {
@@ -33,11 +39,8 @@ const experiences = [
   },
 ];
 
-const resumePreview =
-  'https://static.wixstatic.com/media/de0c29_8c6e396f886546b5a0d65a7e831df866~mv2.jpg/v1/fill/w_667,h_865,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Farhan%20Ahmed%20-%20Resume_page-0001.jpg';
-
-const resumePdf =
-  'https://de0c29d0-e7d9-4dc4-b425-d59e106e9591.usrfiles.com/ugd/de0c29_552bde457f9f402db981a4ab2bc4311e.pdf';
+const resumePreview = '/resume/Resume-preview.png';
+const resumePdf = '/resume/Resume.pdf';
 
 function FileIcon() {
   return (
