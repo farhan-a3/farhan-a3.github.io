@@ -42,7 +42,7 @@ function Home() {
 
       <section className="mx-auto max-w-[1600px] px-6 py-16 sm:px-8 lg:px-10 lg:py-20">
         <div className="mx-auto max-w-[760px]">
-          <h2 className="mb-6 text-center text-[2.6rem] font-black italic tracking-tight text-[#f6f3ed] sm:text-[3rem]">
+          {/*<h2 className="mb-6 text-center text-[2.6rem] font-black italic tracking-tight text-[#f6f3ed] sm:text-[3rem]">
             Why Me?
           </h2>
 
@@ -56,7 +56,7 @@ function Home() {
               <source src={videoSource} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-          </div>
+          </div>*/}
         </div>
       </section>
     </PageLayout>

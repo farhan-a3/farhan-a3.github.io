@@ -11,14 +11,14 @@ const education = {
 const experiences = [
   {
     title: 'AI & Software Engineer Intern | Pitstop | Toronto, ON',
-    dates: 'Jan. 2026 - Mar. 2026',
+    dates: 'January 2026 - March 2026',
     bullets: [
       'Built automated tests and evaluation tools for fleet dashboards and OCR/VMRS pipelines, investigated production issues, shipped frontend and backend features and fixes, and supported AI fleet analytics by validating SQL outputs and improving prompt accuracy',
     ],
   },
   {
     title: 'QA Automation Engineer Coop | theScore',
-    dates: 'January 2025 - Present',
+    dates: 'January 2025 - August 2025',
     bullets: [
       'Developed and maintained automated test suites in Kotlin with Selenium/Appium for web, iOS, and Android features, improving test coverage, reducing manual QA effort, and fixing flaky tests to improve pipeline reliability',
     ],
@@ -32,7 +32,7 @@ const experiences = [
   },
   {
     title: 'Supplemental Instructor | York University',
-    dates: 'Sept. 2022 - Apr. 2023',
+    dates: 'September 2022 - April 2023',
     bullets: [
       'Led bi-weekly study sessions for Discrete Mathematics and Linear Algebra, supporting student learning through collaborative review, concept reinforcement, and promotion of active study strategies',
     ],
