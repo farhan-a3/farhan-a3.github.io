@@ -71,7 +71,7 @@ function Career() {
       </section>
 
       <section className="mx-auto max-w-[1650px] px-6 py-12 sm:px-8 lg:px-10 lg:py-14">
-        <div className="grid gap-14 xl:grid-cols-[minmax(0,1fr)_minmax(520px,640px)] xl:gap-12">
+        <div className="grid gap-14 xl:grid-cols-[minmax(0,1fr)_minmax(580px,720px)] xl:gap-10">
           <div>
             <div>
               <h2 className="text-[1.8rem] font-bold uppercase tracking-wide text-[#f6f3ed]">
@@ -127,7 +127,7 @@ function Career() {
             <img
               src={resumePreview}
               alt="Resume preview"
-              className="w-full max-w-[640px] bg-white object-cover shadow-[0_16px_40px_rgba(0,0,0,0.22)]"
+              className="w-full max-w-[720px] bg-white object-cover shadow-[0_16px_40px_rgba(0,0,0,0.22)]"
             />
 
             <a
