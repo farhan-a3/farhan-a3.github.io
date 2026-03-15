@@ -2,17 +2,17 @@ import { useEffect, useRef, useState } from 'react';
 
 const socialLinks = [
   {
-    href: 'mailto:farhan.a3hd@gmail.com',
-    label: 'Email Farhan',
-    image:
-      'https://static.wixstatic.com/media/de0c29_4f3d27be99854e35b2b0f0c4f6182837~mv2.png/v1/fill/w_106,h_106,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/de0c29_4f3d27be99854e35b2b0f0c4f6182837~mv2.png',
-    sizeClass: 'h-[84px] w-[84px]',
-  },
-  {
     href: 'https://www.linkedin.com/in/farhan-ahmed-37124a23b/',
     label: 'Farhan on LinkedIn',
     image:
       'https://static.wixstatic.com/media/de0c29_30d7c80d03444590a35a401d97a4ab45~mv2.png/v1/fill/w_106,h_106,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/de0c29_30d7c80d03444590a35a401d97a4ab45~mv2.png',
+    sizeClass: 'h-[84px] w-[84px]',
+  },
+  {
+    href: 'mailto:farhan.a3hd@gmail.com',
+    label: 'Email Farhan',
+    image:
+      'https://static.wixstatic.com/media/de0c29_4f3d27be99854e35b2b0f0c4f6182837~mv2.png/v1/fill/w_106,h_106,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/de0c29_4f3d27be99854e35b2b0f0c4f6182837~mv2.png',
     sizeClass: 'h-[84px] w-[84px]',
   },
   {
@@ -57,35 +57,46 @@ function Footer() {
 
   return (
     <footer id="contact" className="mt-16 border-t border-[#f6f3ed]/55">
-      <div
-        className={`mx-auto max-w-[1600px] px-6 py-10 transition-all duration-300 sm:px-8 lg:px-10 ${
-          isHighlighted
-            ? 'rounded-md bg-[#0a1844]/75 shadow-[0_0_0_2px_rgba(183,255,21,0.8),0_0_28px_rgba(183,255,21,0.24)]'
-            : ''
-        }`}
-      >
+      <div className="mx-auto max-w-[1600px] px-6 py-10 sm:px-8 lg:px-10">
         <div className="flex flex-col gap-8 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-end">
           <div className="text-sm text-[#f6f3ed] lg:self-end">
             © 2026 by Farhan Ahmed
           </div>
 
-          <div className="flex items-center justify-center gap-6">
-            {socialLinks.map((link) => (
+          <div
+            className={`mx-auto rounded-md px-4 py-3 transition-all duration-300 ${
+              isHighlighted
+                ? 'bg-[#0a1844]/75 shadow-[0_0_0_2px_rgba(183,255,21,0.8),0_0_28px_rgba(183,255,21,0.24)]'
+                : ''
+            }`}
+          >
+            <div className="flex items-center justify-center gap-6">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target={link.href.startsWith('mailto:') ? undefined : '_blank'}
+                  rel={link.href.startsWith('mailto:') ? undefined : 'noreferrer noopener'}
+                  aria-label={link.label}
+                  className="transition-transform hover:-translate-y-1"
+                >
+                  <img
+                    src={link.image}
+                    alt=""
+                    className={`${link.sizeClass} object-contain`}
+                  />
+                </a>
+              ))}
+            </div>
+
+            <div className="mt-3 text-center">
               <a
-                key={link.label}
-                href={link.href}
-                target={link.href.startsWith('mailto:') ? undefined : '_blank'}
-                rel={link.href.startsWith('mailto:') ? undefined : 'noreferrer noopener'}
-                aria-label={link.label}
-                className="transition-transform hover:-translate-y-1"
+                href="mailto:farhan.a3hd@gmail.com"
+                className="text-sm text-[#f6f3ed] transition-colors hover:text-[#b7ff15]"
               >
-                <img
-                  src={link.image}
-                  alt=""
-                  className={`${link.sizeClass} object-contain`}
-                />
+                farhan.a3hd@gmail.com
               </a>
-            ))}
+            </div>
           </div>
 
           <div className="flex items-end justify-start lg:justify-end">
