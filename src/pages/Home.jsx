@@ -27,15 +27,14 @@ function Home() {
             </p>
           </div>
 
-          <div className="max-w-[620px] text-[1.3rem] leading-[1.55] text-[#f6f3ed] sm:text-[1.45rem]">
+          <div className="max-w-[630px] text-[1.3rem] leading-[1.55] text-[#f6f3ed] sm:text-[1.45rem] lg:pt-10">
             <p>
-              Welcome! I&apos;m Farhan, a passionate and driven programmer with
-              experience in quality assurance and data engineering. With a
-              background in tutoring and leadership, I enjoy breaking down
-              complex concepts and collaborating on innovative projects.
-              Whether it&apos;s coding, learning new technologies, or tackling
-              challenges, I&apos;m always eager to grow and contribute. Feel
-              free to explore my work and connect with me!
+              Welcome! I'm Farhan, a passionate and driven programmer with experience 
+              in software testing, AI-focused development, and data engineering. With 
+              a background in tutoring and leadership, I enjoy breaking down complex 
+              concepts and collaborating on innovative projects. Whether it's coding, 
+              building practical software, or learning new technologies, I'm always eager 
+              to grow and contribute. Feel free to explore my work and connect with me!
             </p>
           </div>
         </div>
