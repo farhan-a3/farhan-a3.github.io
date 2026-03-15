@@ -6,7 +6,7 @@ const links = [
   { to: '/about', label: 'ABOUT' },
   { to: '/career', label: 'CAREER' },
   { to: '/projects', label: 'PROJECTS' },
-  { to: '/goals', label: 'GOALS' },
+  // hiding GOALS from navbar, route still exists
 ];
 
 const baseNavItemClass =
@@ -20,19 +20,31 @@ function Navbar() {
   const navigate = useNavigate();
   const [hoveredItem, setHoveredItem] = useState(null);
 
+  const triggerFooterHighlight = () => {
+    window.dispatchEvent(new CustomEvent('highlight-footer'));
+  };
+
+  const scrollToContact = () => {
+    const footer = document.getElementById('contact');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      triggerFooterHighlight();
+    }
+  };
+
   const handleContactClick = (event) => {
     event.preventDefault();
 
     if (location.pathname === '/') {
-      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+      scrollToContact();
       return;
     }
 
     navigate('/');
 
     window.setTimeout(() => {
-      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-    }, 200);
+      scrollToContact();
+    }, 250);
   };
 
   const getNavColor = (key, isActive = false) => {
@@ -42,7 +54,7 @@ function Navbar() {
   };
 
   return (
-    <header className="border-b border-[#f6f3ed]/55">
+    <header className="sticky top-0 z-50 border-b border-[#f6f3ed]/55 bg-[#010127]/95 backdrop-blur">
       <div className="mx-auto flex max-w-[1600px] items-center justify-between gap-6 px-6 py-6 sm:px-8 lg:px-10">
         <NavLink
           to="/"
@@ -76,9 +88,7 @@ function Navbar() {
             to="/"
             onClick={handleContactClick}
             className={baseNavItemClass}
-            style={{
-              color: getNavColor('CONTACT'),
-            }}
+            style={{ color: getNavColor('CONTACT') }}
             onMouseEnter={() => setHoveredItem('CONTACT')}
             onMouseLeave={() => setHoveredItem(null)}
           >

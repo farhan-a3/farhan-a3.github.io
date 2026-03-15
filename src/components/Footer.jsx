@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from 'react';
+
 const socialLinks = [
   {
     href: 'mailto:farhan.a3hd@gmail.com',
@@ -23,13 +25,45 @@ const socialLinks = [
 ];
 
 function Footer() {
+  const [isHighlighted, setIsHighlighted] = useState(false);
+  const timeoutRef = useRef(null);
+
+  useEffect(() => {
+    const handleHighlight = () => {
+      setIsHighlighted(true);
+
+      if (timeoutRef.current) {
+        window.clearTimeout(timeoutRef.current);
+      }
+
+      timeoutRef.current = window.setTimeout(() => {
+        setIsHighlighted(false);
+      }, 1800);
+    };
+
+    window.addEventListener('highlight-footer', handleHighlight);
+
+    return () => {
+      window.removeEventListener('highlight-footer', handleHighlight);
+      if (timeoutRef.current) {
+        window.clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
+
   const handleBackToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
     <footer id="contact" className="mt-16 border-t border-[#f6f3ed]/55">
-      <div className="mx-auto max-w-[1600px] px-6 py-10 sm:px-8 lg:px-10">
+      <div
+        className={`mx-auto max-w-[1600px] px-6 py-10 transition-all duration-300 sm:px-8 lg:px-10 ${
+          isHighlighted
+            ? 'rounded-md bg-[#0a1844]/75 shadow-[0_0_0_2px_rgba(183,255,21,0.8),0_0_28px_rgba(183,255,21,0.24)]'
+            : ''
+        }`}
+      >
         <div className="flex flex-col gap-8 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-end">
           <div className="text-sm text-[#f6f3ed] lg:self-end">
             © 2026 by Farhan Ahmed
