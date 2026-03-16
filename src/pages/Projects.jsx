@@ -35,6 +35,17 @@ const projects = [
     ],
   },
   {
+    title: 'Portfolio Website',
+    stack: 'React, Vite, Tailwind CSS, React Router, GitHub Pages',
+    image: '/projects/portfolio-site.png',
+    alt: 'Portfolio website homepage screenshot',
+    github: 'https://github.com/farhan-a3/farhan-a3.github.io',
+    bullets: [
+      'Built and deployed a responsive multi-page portfolio website to showcase my background, experience, and technical projects using React, Tailwind CSS, and React Router.',
+      'Created reusable shared components and adapted the design from my original Wix portfolio into a cleaner coded version hosted on GitHub Pages.',
+    ],
+  },
+  {
     title: 'Library Management System',
     stack: 'Java, Swing',
     image:
