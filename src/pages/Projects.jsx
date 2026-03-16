@@ -8,8 +8,8 @@ const projects = [
     alt: 'NEXUS AI Learning Constellation App screenshot',
     github: 'https://github.com/r05200/ctrlhackdel',
     bullets: [
-      'Built a hackathon AI learning platform that generates interactive concept dependency maps from user topics using React, Three.js, and Gemini.',
-      'Developed backend evaluation flows for spoken explanations and AI grading, unlocking new concepts as users demonstrated understanding.',
+      'Built a hackathon AI learning platform that generates interactive concept dependency maps from user topics using React, Three.js, and Gemini',
+      'Developed backend evaluation flows for spoken explanations and AI grading, unlocking new concepts as users demonstrated understanding',
     ],
   },
   {
@@ -19,8 +19,8 @@ const projects = [
     alt: 'E-commerce Web App screenshot',
     github: 'https://github.com/farhan-a3/EECS4413-ecommerce-project',
     bullets: [
-      'Built a full-stack e-commerce platform with product browsing, shopping cart, and order management features across a React and Express stack.',
-      'Designed REST APIs, Prisma database models, and Dockerized the app for more consistent development and deployment.',
+      'Built a full-stack e-commerce platform with product browsing, shopping cart, and order management features across a React and Express stack',
+      'Designed REST APIs, Prisma database models, and Dockerized the app for more consistent development and deployment',
     ],
   },
   {
@@ -30,8 +30,8 @@ const projects = [
     alt: 'AI Image Generator screenshot',
     github: 'https://github.com/farhan-a3/ai-image-generator',
     bullets: [
-      'Built a React web app that turns text prompts into AI-generated images, letting users create and view results in real time.',
-      'Integrated external image APIs and asynchronous request handling, then designed a polished responsive UI for a smooth experience.',
+      'Built a React web app that turns text prompts into AI-generated images, letting users create and view results in real time',
+      'Integrated external image APIs and asynchronous request handling, then designed a polished responsive UI for a smooth experience',
     ],
   },
   {
@@ -41,80 +41,74 @@ const projects = [
     alt: 'Portfolio website homepage screenshot',
     github: 'https://github.com/farhan-a3/farhan-a3.github.io',
     bullets: [
-      'Built and deployed a responsive multi-page portfolio website to showcase my background, experience, and technical projects using React, Tailwind CSS, and React Router.',
-      'Created reusable shared components and adapted the design from my original Wix portfolio into a cleaner coded version hosted on GitHub Pages.',
+      'Built and deployed a responsive multi-page portfolio website to showcase my background, experience, and technical projects using React, Tailwind CSS, and React Router',
+      'Created reusable shared components and adapted the design from my original Wix portfolio into a cleaner coded version hosted on GitHub Pages',
     ],
   },
   {
     title: 'Library Management System',
     stack: 'Java, Swing',
-    image:
-      'https://static.wixstatic.com/media/de0c29_0beddfe0167749e5a4f1a51771170c34~mv2.png/v1/crop/x_35,y_0,w_713,h_525/fill/w_456,h_336,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/library%20management%20system.png',
+    image: 'https://static.wixstatic.com/media/de0c29_0beddfe0167749e5a4f1a51771170c34~mv2.png/v1/crop/x_35,y_0,w_713,h_525/fill/w_456,h_336,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/library%20management%20system.png',
     alt: 'Library Management System project screenshot',
     github: 'https://github.com/farhan-a3/EECS3311-finalproject',
     bullets: [
-      'Co-developed a Java Swing-based Library Management System for YorkU to manage books, users, and transactions.',
-      'Implemented core features using object-oriented programming and Java Collections in a collaborative team environment.',
+      'Co-developed a Java Swing-based Library Management System for YorkU to manage books, users, and transactions',
+      'Implemented core features using object-oriented programming and Java Collections in a collaborative team environment',
     ],
   },
   {
     title: 'Leaderboards Discord Bot',
     stack: 'JavaScript, Node.js',
-    image:
-      'https://static.wixstatic.com/media/de0c29_8e8f55503aae45c0afe2d3ab5e2f5fdd~mv2.jpg/v1/crop/x_0,y_118,w_900,h_663/fill/w_456,h_336,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/discord%20bot.jpg',
+    image: 'https://static.wixstatic.com/media/de0c29_8e8f55503aae45c0afe2d3ab5e2f5fdd~mv2.jpg/v1/crop/x_0,y_118,w_900,h_663/fill/w_456,h_336,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/discord%20bot.jpg',
     alt: 'Leaderboards Discord Bot project screenshot',
     github: 'https://github.com/farhan-a3/Leaderboards-Discord-Bot',
     bullets: [
-      'Developed a Discord bot using Node.js and Discord.js to support dynamic leaderboard features.',
-      'Implemented ranking functionality that tracked and displayed user standings based on server activity and statistics.',
+      'Developed a Discord bot using Node.js and Discord.js to support dynamic leaderboard features',
+      'Implemented ranking functionality that tracked and displayed user standings based on server activity and statistics',
     ],
   },
   {
     title: 'Weather App',
     stack: 'HTML, CSS, JavaScript',
-    image:
-      'https://static.wixstatic.com/media/de0c29_a2c8e8d25e374e6f8d4d34775aa76afe~mv2.png/v1/crop/x_0,y_218,w_610,h_449/fill/w_456,h_336,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/weather%20app.png',
+    image: 'https://static.wixstatic.com/media/de0c29_a2c8e8d25e374e6f8d4d34775aa76afe~mv2.png/v1/crop/x_0,y_218,w_610,h_449/fill/w_456,h_336,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/weather%20app.png',
     alt: 'Weather App project screenshot',
     github: 'https://github.com/farhan-a3/weather-app',
     bullets: [
-      'Developed a website to display live weather information for user-inputted locations.',
-      'Used the OpenWeatherMap API to fetch and present temperature, humidity, and wind data in a clear UI.',
+      'Developed a website to display live weather information for user-inputted locations',
+      'Used the OpenWeatherMap API to fetch and present temperature, humidity, and wind data in a clear UI',
     ],
   },
   {
     title: 'Big Integer Library',
     stack: 'C',
-    image:
-      'https://static.wixstatic.com/media/de0c29_c6ca0dc3f2ec44469c4e4456ff4ec0d9~mv2.jpg/v1/crop/x_0,y_81,w_612,h_451/fill/w_456,h_336,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/istockphoto-615714450-612x612.jpg',
+    image: 'https://static.wixstatic.com/media/de0c29_c6ca0dc3f2ec44469c4e4456ff4ec0d9~mv2.jpg/v1/crop/x_0,y_81,w_612,h_451/fill/w_456,h_336,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/istockphoto-615714450-612x612.jpg',
     alt: 'Big Integer Library project screenshot',
     github: 'https://github.com/farhan-a3/bigint',
     bullets: [
-      'Built a Big Integer library in C to handle arithmetic on values larger than built-in numeric types.',
-      'Implemented carry handling, string parsing, and memory management for accurate large-number computation.',
+      'Built a Big Integer library in C to handle arithmetic on values larger than built-in numeric types',
+      'Implemented carry handling, string parsing, and memory management for accurate large-number computation',
     ],
   },
   {
     title: 'Number Guessing Game',
     stack: 'Android Studio, Java, JUnit, XML',
-    image:
-      'https://static.wixstatic.com/media/de0c29_0fa84fa6c28b4944b80278b29d31e16e~mv2.png/v1/crop/x_0,y_108,w_488,h_359/fill/w_456,h_336,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/gtn.png',
+    image: 'https://static.wixstatic.com/media/de0c29_0fa84fa6c28b4944b80278b29d31e16e~mv2.png/v1/crop/x_0,y_108,w_488,h_359/fill/w_456,h_336,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/gtn.png',
     alt: 'Number Guessing Game project screenshot',
     github: 'https://github.com/farhan-a3/guessthenumber',
     bullets: [
-      'Developed an Android app where users guess a randomly generated number across multiple difficulty levels.',
-      'Implemented the UI and game logic using Java, XML layouts, and supporting Android Studio tooling.',
+      'Developed an Android app where users guess a randomly generated number across multiple difficulty levels',
+      'Implemented the UI and game logic using Java, XML layouts, and supporting Android Studio tooling',
     ],
   },
   {
     title: 'Terminal Wordle Game',
     stack: 'C',
-    image:
-      'https://static.wixstatic.com/media/de0c29_344715c3ffe84bfbb964e11b238bf742~mv2.jpg/v1/crop/x_0,y_95,w_720,h_531/fill/w_456,h_336,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1699448130785.jpg',
+    image: 'https://static.wixstatic.com/media/de0c29_344715c3ffe84bfbb964e11b238bf742~mv2.jpg/v1/crop/x_0,y_95,w_720,h_531/fill/w_456,h_336,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1699448130785.jpg',
     alt: 'Terminal Wordle Game project screenshot',
     github: 'https://github.com/farhan-a3/terminal-wordle',
     bullets: [
-      'Developed a terminal-based Wordle game in C with user input, colored feedback, and limited attempts.',
-      'Used file I/O, string manipulation, and control flow to recreate the core gameplay mechanics.',
+      'Developed a terminal-based Wordle game in C with user input, colored feedback, and limited attempts',
+      'Used file I/O, string manipulation, and control flow to recreate the core gameplay mechanics',
     ],
   },
 ];
